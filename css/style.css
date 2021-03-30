@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(84, 89, 93);
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    font-family:"Linux Libertine";
+    color: black;
+    margin-top: 4rem;
+}
+
+header .main-header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header .main-header .header-logo {
+    width: 5.7rem;
+    height: 5.2rem;
+    margin-right: 1rem;
+}
+
+header .main-header .header-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+header .main-header .header-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header .main-header .header-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main .main-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-search .main-input {
+    border: 1px solid #a2a9b1;
+    width: 90%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+
+}
+
+.main-input .input-text {
+    width: calc(100% - 5rem) ;
+    height: 4rem;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.main-input .input-icon {
+    height: 4.5rem;
+    width: 5rem;
+    background-color: #3366cc;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-input .input-icon:hover {
+    background-color: #447ff5;
+}
+
+.main-input .input-text:focus {
+
+    outline: 2px solid #447ff5;
+}
+
+
+main .main-languages {
+    width: 90%;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center
+
+}
+
+main .main-languages ul {
+    list-style-type: none;
+}
+
+main .main-languages ul li {
+    cursor: pointer;
+    text-align: center;
+    margin: 0 .5rem 3rem .5rem;
+}
+
+main .main-languages ul li span {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .main-languages ul li a{
+    text-decoration: none;
+    color: #3366cc;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+main .main-languages ul li p {
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+main .main-readm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #3366cc;
+    width: 100%;
+}
+
+main .main-readm div {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    width: 70%;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    border: 1px solid #a2a9b1;
+    border-radius: 3px;
+    margin-bottom: 4rem;
+}
+
+main .main-readm div:hover {
+    background-color: white;
+}
+
+main .main-readm div .readm-icon {
+    font-size: 2rem;
+}
+
+main .main-readm div:active {
+    border: 2px solid #447ff5;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    font-size: 1.3rem;
+    margin: 1rem;
+
+}
+
+footer .footer-info figure img{
+    width: 7rem;
+    height: auto;
+}
+
+footer .footer-info figure {
+    margin-bottom: 1rem;
+}
+
+footer .footer-info {
+    text-align: center;
+    margin: 2rem;
+}
+
+footer .footer-list a {
+    text-decoration: none;
+    color: #447ff5;
+    font-size: 1.5rem;
+}
+
+footer .footer-list li div figure {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-list img {
+    width: 6rem;
+    height: auto;
+
+}
+
+footer .footer-list {
+    display: grid;
+    grid-template-columns: 45% 45%; 
+    grid-template-rows: auto;
+    list-style: none;
+    text-align: left;
+    justify-content: center;
+}
+
+
+footer .footer-list li {
+    cursor: pointer;
+    margin: 0 5rem 1rem 0;
+}
+
+footer .footer-list li div {
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-download {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+footer .footer-download p{
+    margin: 2rem;
+}
+
+footer .footer-download span {
+    font-weight: bold;
+}
+
+footer .footer-download button {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
